@@ -64,8 +64,8 @@
 
 Part of the workshop dedicated to model deployment and code architecture basics.
 
-**Length:** approx. 1.5 hours.
-**Prerequisites:** basic knowledge of python (you should know how to write functions, be able to work with the primitives such as ```str```, ```list```, ```int```, ```dict```) and import packages.
+**Length:** approx. 1.5 hours.\
+**Prerequisites:** basic knowledge of python (you should know how to write functions, be able to work with the primitives such as ```str```, ```list```, ```int```, ```dict```) and import packages.\
 **In the end of the workshop:** you should be able to write basic classes, enumerators, know how to run a FastAPI server in colab environment and Flask locally.
 
 ### Intro
@@ -100,6 +100,7 @@ Open the ```ModelDeployment.ipynb``` in [colab](https://colab.research.google.co
 None
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- USAGE EXAMPLES -->
+
 ### Usage
 
 * Run the cells one by one
