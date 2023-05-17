@@ -11,14 +11,12 @@ This document explains how to create a server function on GCP.
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#usage">Usage</a></li>
-      </ul>
+        <li><a href="#prerequisites">Creating a server function</a></li>
+        <li><a href="#settings">Server function settings
+</a></li>
     </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#testing">Testing the function</a></li>
+    <li><a href="#resources">Resources</a></li>
   </ol>
 </details>
 
@@ -133,3 +131,16 @@ We replace ```return``` with ```res``` to be able to do something with the input
 ![allUsers](./.assets/cloud_shell_test.png)
 1. Testing with different input:
 ![allUsers](./.assets/concordia.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Resources
+
+* [GCP console](https://console.cloud.google.com)
+* [Free resources on GCP](https://cloud.google.com/free)
+* [Cloud Functions limits](https://cloud.google.com/free/docs/free-cloud-features#cloud-functions)
+* [Cloud Functions docs](https://cloud.google.com/functions/docs)
+*  [Cloud Functions How-To Guides](https://cloud.google.com/functions/docs/how-to)
+* [GCP tutorials - different products of GCP](https://www.cloudskillsboost.google/journeys)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
