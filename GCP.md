@@ -112,6 +112,9 @@ We replace ```return``` with ```res``` to be able to do something with the input
 
 1. A simple example could be adding a string to the input we receive (but make sure your input is a string :neutral_face:): ```res += " another string"```
 
+1. The entire function can be found [here](https://github.com/STASYA00/iaacCodeAndDeploy/blob/main/src/get_result.py)
+1. The requirements file can be found [here](https://github.com/STASYA00/iaacCodeAndDeploy/blob/main/src/requirements.txt)
+
 1. Click on ```Deploy```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
