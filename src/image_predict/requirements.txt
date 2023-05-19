@@ -1,0 +1,6 @@
+Flask
+opencv-python-headless
+functions-framework
+https://download.pytorch.org/whl/cpu/torch-2.0.0%2Bcpu-cp311-cp311-linux_x86_64.whl
+numpy
+requests
