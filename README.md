@@ -23,7 +23,7 @@
   <p align="center">
     IAAC: Code Architecture Basics & Model Deployment.
     <br />
-    <a href="https://colab.research.google.com/github/STASYA00/iaacCodeAndDeploy/blob/main/ModelDeployment.ipynb">View Demo</a>
+    <a href="https://colab.research.google.com/github/STASYA00/iaacCodeAndDeploy/blob/main/src/notebooks/ModelDeployment.ipynb">View Demo</a>
     ·
     <a href="https://github.com/STASYA00/iaacCodeAndDeploy/issues">Report Bug</a>
     ·
@@ -94,7 +94,7 @@ This tutorial aims to introduce the basics of good coding practices (OOP) and ge
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Open the ```ModelDeployment.ipynb``` in [colab](https://colab.research.google.com/github/STASYA00/iaacCodeAndDeploy/blob/main/ModelDeployment.ipynb)
+Open the ```ModelDeployment.ipynb``` in [colab](https://colab.research.google.com/github/STASYA00/iaacCodeAndDeploy/blob/main/src/notebooks/ModelDeployment.ipynb)
 
 ### Prerequisites
 None

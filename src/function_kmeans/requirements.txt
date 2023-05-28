@@ -1,0 +1,9 @@
+# Function dependencies, for example:
+# package>=version
+Pillow
+pandas>=0.24
+requests
+Flask
+opencv-python-headless
+functions-framework
+scikit-learn
