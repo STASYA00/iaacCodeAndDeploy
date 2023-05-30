@@ -20,15 +20,13 @@ __Prerequisites:__
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about">About</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-        <li><a href="#prerequisites">Creating a server function</a></li>
-        <li><a href="#settings">Server function settings
-</a></li>
-    </li>
-    <li><a href="#testing">Testing the function</a></li>
+      <a href="#getting-started">Getting Started</a></li>
+        <li><a href="#store-the-file">Store the file</a></li>
+        <li><a href="#set-up-cloud-function">Set up cloud function</a></li>
+    <li><a href="#permissions">Permissions</a></li>
+    <li><a href="#read-csv-from-the-bucket">Read .csv from the bucket</a></li>
+    
+    <li><a href="#adding-kmeans">Adding Kmeans</a></li>
     <li><a href="#resources">Resources</a></li>
   </ol>
 </details>
@@ -62,7 +60,9 @@ Select it in the menu:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Read .csv into pandas df on GCP
+
+
+### Set up Cloud Function
 
 1. Let's create a new function (detailed instruction [here](https://github.com/STASYA00/iaacCodeAndDeploy/blob/main/GCP.md))\
 Choose Python - the version your project uses
@@ -83,6 +83,31 @@ Add ```utils.py```, ```requirements.txt``` and ```main.py``` from the [folder](h
     </details>
 
     ![gcp web interface](.assets/cloud_storage/cloud_function.png)
+    
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Permissions
+
+Files in the bucket are protected from public access (security 🙂), which means that cloud function has no access to them. We would need to grant it a permission to do it.
+
+1. Go to the ```Details``` section of the cloud function. Copy the name of the associated _service account_. This is the account that _acts_ in the name of this function, it will be this account who needs the access to the bucket.
+![Get Cloud Function service account](.assets/cloud_storage/function_service_account.png)
+2. Go to your bucket, click on it and choose the ```Permissions``` tab. Such tab exists on most of the GCP products, it is generally the place to grant access to someone. Click on ```Grant Access```
+![Bucket Permissions Tab](.assets/cloud_storage/bucket_permissions.png)
+3. In ```Principal``` paste the service account address you have just copied:
+![Bucket Permissions Tab](.assets/cloud_storage/bucket_principals.png)
+4. In ```Roles``` click on the ```Cloud Storage``` 
+![permission roles](.assets/cloud_storage/buvket_permissions_roles.png)
+5. assign the following roles to your service account, one by one:
+![permission roles](.assets/cloud_storage/permission1.png)
+6. Save. Make sure you see these roles in the ```Permissions``` tab now.
+![permission roles](.assets/cloud_storage/permission2.png)
+![permission roles](.assets/cloud_storage/permission3.png)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Read .csv from the bucket
 
 1. Get the path of your ```.csv``` on GCP. For that _in a separate tab_ go to the bucket we have created earlier, click on the ```POI_200.csv``` (or the file you used) and copy the path:
 ![gcp web interface](.assets/cloud_storage/file_path.png)
